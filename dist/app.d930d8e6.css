@@ -1,5 +1,4 @@
 html {
-  color: seashell;
   background-color: seashell;
 }
 
@@ -9,6 +8,30 @@ html {
   margin: 5ch;
   display: flex;
   background-image: url("https://static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/55257b9be4b026f753132665/59f782dcc83025d923949f59/1509393191802/earth-earth-at-night-night-lights-41949.jpeg?format=750w");
+}
+h3 {
+  color: seashell;
+}
+h1 {
+  color: #00b3b4;
+}
+p:nth-child(2) {
+  color: seashell;
+}
+p:nth-child(4) {
+  color: seashell;
+}
+p:nth-child(6) {
+  color: seashell;
+}
+p:nth-child(8) {
+  color: seashell;
+}
+p:nth-child(10) {
+  color: seashell;
+}
+p:nth-child(12) {
+  color: seashell;
 }
 
 h1,
