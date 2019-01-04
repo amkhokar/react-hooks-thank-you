@@ -1,8 +1,8 @@
 {
-  "name": "napster-hooks",
+  "name": "thank-you-hooks",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "Simple Parcel Sandbox",
+  "description": "thank you",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
