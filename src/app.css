@@ -1,11 +1,22 @@
-label {
-  width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 15px;
+#app {
+  color: white;
+  padding: 1ch;
+  margin: 1ch;
+  background-image: url("https://static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/55257b9be4b026f753132665/59f782dcc83025d923949f59/1509393191802/earth-earth-at-night-night-lights-41949.jpeg?format=750w");
+  background-size: contain;
+}
+h1 {
+  text-align: center;
+  position: sticky;
 }
 
-ul {
-  list-style-type: none;
+img {
+  border: 1px solid #00b3b4;
+}
+img:hover {
+  border: 1px solid white;
+}
+#epicodus {
+  border: 1px transparent blue;
+  pointer-events: none;
 }

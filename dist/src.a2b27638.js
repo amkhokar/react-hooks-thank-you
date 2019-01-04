@@ -31458,7 +31458,65 @@ Gallery.defaultProps = {
 };
 
 module.exports = Gallery;
-},{"prop-types":"node_modules/prop-types/index.js","react":"node_modules/react/index.js","react-images":"node_modules/react-images/lib/Lightbox.js","./Image.js":"node_modules/react-grid-gallery/lib/Image.js"}],"src/App.js":[function(require,module,exports) {
+},{"prop-types":"node_modules/prop-types/index.js","react":"node_modules/react/index.js","react-images":"node_modules/react-images/lib/Lightbox.js","./Image.js":"node_modules/react-grid-gallery/lib/Image.js"}],"src/MessageList.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MessageList = function MessageList() {
+  var allPersons = [{
+    name: "Brian",
+    message: "Thanks for being the peoples that stand for us to succeed in the world. It shows how big of people your are to be able to put so much of yourselves into allowing us to fulfill our dreams."
+  }, {
+    name: "MARK",
+    message: "Yow Thanks Ernest!"
+  }, {
+    name: "MERIA",
+    message: "It's a bitter sweet moment that our classes are coming to an end. It has been very educational but a fun journey. I am going to miss you and thank you for all the help. You guys have been great teachers. That's my piece of message for the teachers"
+  }, {
+    name: "JULIUS",
+    message: "Thank you ernest and panadta for being a great teacher! Hoping to work with you in the future!"
+  }, {
+    name: "CATHY",
+    message: "Panatda and Ernest - Thank you so much for all the effort you showed for our cohort! As your first cohort I hope we weren't too much to handle. I know you guys will put all your love into Epicodus to make it a great place."
+  }, {
+    name: "DEREK",
+    message: "I want to tell you that I have appreciated everything you've done for us. You understood the issues with the class and did your best to improve upon it. I will say that this class would not have been as awesome and you are also the one of the reasons I stayed. Thank you for everything."
+  }, {
+    name: "VICTORIA",
+    message: "Panatda: Farts. Ernest: Thanks for supporting me in my React / C# journey.I resolved my vulnerabilities without breaking my project(again) with try #2!"
+  }, {
+    name: "REGINA",
+    message: "Panatda, I would like to say huge Thank You! You are hands down the best teacher / instructor / mentor I've ever had. And you've also been a wonderful friend who can listen and support.Your dedication, your passion and positive attitude that's what helped me to believe in myself. You brought Epicodus to the next level and made of it not just a boot camp but the place where everybody valued as an individual and have an exclusive approach. I know for sure one day your dream will come true and you will open your own company and it will be very very successful! I'm very happy to realize that my cohort was your very first one and you have certainly nailed it! I hope we all will stay in touch no matter what career path we'll take in the future! Ernest, unfortunately, we didn't have a chance to enjoy your company since the very beginning, but I'm super glad we've got to know you even if we are moving closer to the end of the program. You are such a cheerful, easygoing and kind person. I feel like you have a real talent to explain the material very easy and fun way which by the way helps so much! I know that you will find your dream job very soon and be very successful at it! I'm really happy that you are part of the wonderful Epicodus memories that I will cherish forever!"
+  }, {
+    name: "KENNETH",
+    message: "Thank you for dedicating your time and going beyond the job to steer us in the right direction.I appreciate the honesty, and effort you put into shaping us and our futures.I think the way you both treat people is exemplary, and that in my opinion is the main reason you are so respectable.I don\u2019t think I would have nearly the same experience if I wasn\u2019t so personal and vulnerable to the both of you.Once again, thank you for everything."
+  }, {
+    name: "MEL",
+    message: "Holy cow! We're done with the course already? I'm going to miss you guys and everyone in class! You both are amazing people.Definitely keep in touch.Let's get together and catch up sometimes."
+  }, {
+    name: "AHMED",
+    message: "You guys have given me direction in life, mentorship, and most importantly friendship. This program has meant the world to me, and I am going to keep bugging you guys forever. BWAHAHAHAHAH!"
+  }].sort(function (a, b) {
+    return b.name > a.name;
+  });
+  return _react.default.createElement("div", null, allPersons.map(function (person) {
+    return _react.default.createElement("p", {
+      key: person.name[0].toUpperCase() + person.name.slice(1).toLowerCase()
+    }, "".concat(person.name[0].toUpperCase() + person.name.slice(1).toLowerCase(), " : ").concat(person.message));
+  }));
+};
+
+var _default = MessageList;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31469,6 +31527,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _reactGridGallery = _interopRequireDefault(require("react-grid-gallery"));
+
+var _MessageList = _interopRequireDefault(require("./MessageList"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32071,17 +32131,25 @@ var App = function App() {
     return {
       src: "https://farm".concat(e.farm, ".staticflickr.com/").concat(e.server, "/").concat(e.id, "_").concat(e.secret, ".jpg"),
       thumbnail: "https://farm".concat(e.farm, ".staticflickr.com/").concat(e.server, "/").concat(e.id, "_").concat(e.secret, ".jpg"),
+      thumbnailWidth: 0,
+      thumbnailHeight: 0,
       caption: e.title.split("")[0].toUpperCase() + e.title.slice(1).toLowerCase()
     };
   });
-  return _react.default.createElement(_reactGridGallery.default, {
-    images: finalImages
-  });
+  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Thank You Ernest and Panatda!!!!"), _react.default.createElement("hr", null), _react.default.createElement("img", {
+    id: "epicodus",
+    src: "//static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/57cf3de246c3c4d2933aa57c/1546532665785/?format=1500w",
+    alt: "Epicodus | A vocational school for aspiring programmers"
+  }), _react.default.createElement("hr", null), _react.default.createElement("h3", null, "You make a difference."), _react.default.createElement("div", null, _react.default.createElement("b", null, "Messages:"), " ", _react.default.createElement("br", null), _react.default.createElement(_MessageList.default, null), " ", _react.default.createElement("hr", null)), _react.default.createElement("h3", null, "Images"), _react.default.createElement(_reactGridGallery.default, {
+    images: finalImages,
+    backdropClosesModal: true,
+    enableKeyBoardInput: true
+  }));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-grid-gallery":"node_modules/react-grid-gallery/lib/Gallery.js"}],"src/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-grid-gallery":"node_modules/react-grid-gallery/lib/Gallery.js","./MessageList":"src/MessageList.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));

@@ -1,5 +1,6 @@
 import React from "react";
 import Gallery from "react-grid-gallery";
+import MessageList from "./MessageList";
 // import useEndpoint from "./useEndpoint";
 const App = () => {
   // const flickrAPI =
@@ -663,9 +664,33 @@ const App = () => {
     thumbnail: `https://farm${e.farm}.staticflickr.com/${e.server}/${e.id}_${
       e.secret
     }.jpg`,
+    thumbnailWidth: 0,
+    thumbnailHeight: 0,
     caption: e.title.split("")[0].toUpperCase() + e.title.slice(1).toLowerCase()
   }));
-  return <Gallery images={finalImages} />;
+  return (
+    <div>
+      <h1>Thank You Ernest and Panatda!!!!</h1>
+      <hr />
+      <img
+        id="epicodus"
+        src="//static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/57cf3de246c3c4d2933aa57c/1546532665785/?format=1500w"
+        alt="Epicodus | A vocational school for aspiring programmers"
+      />
+      <hr />
+      <h3>You make a difference.</h3>
+      <div>
+        <b>Messages:</b> <br />
+        <MessageList /> <hr />
+      </div>
+      <h3>Images</h3>
+      <Gallery
+        images={finalImages}
+        backdropClosesModal={true}
+        enableKeyBoardInput={true}
+      />
+    </div>
+  );
 };
 
 export default App;
