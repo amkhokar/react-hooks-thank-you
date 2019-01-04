@@ -31475,11 +31475,14 @@ var MessageList = function MessageList() {
     name: "Brian",
     message: "Thanks for being the peoples that stand for us to succeed in the world. It shows how big of people your are to be able to put so much of yourselves into allowing us to fulfill our dreams."
   }, {
+    name: "Skye",
+    message: "Thank you both for being amazing supporters to us all. You absolutely did everything you could to help us and I am very grateful to have you both in my life!"
+  }, {
     name: "MARK",
     message: "Yow Thanks Ernest!"
   }, {
     name: "MERIA",
-    message: "It's a bitter sweet moment that our classes are coming to an end. It has been very educational but a fun journey. I am going to miss you and thank you for all the help. You guys have been great teachers. That's my piece of message for the teachers"
+    message: "It's a bitter sweet moment that our classes are coming to an end. It has been very educational but a fun journey. I am going to miss you and thank you for all the help. You guys have been great teachers."
   }, {
     name: "JULIUS",
     message: "Thank you ernest and panadta for being a great teacher! Hoping to work with you in the future!"
@@ -31516,6 +31519,109 @@ var MessageList = function MessageList() {
 
 var _default = MessageList;
 exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/Ernest.js":[function(require,module,exports) {
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Ernest = function Ernest() {
+  return React.createElement("svg", {
+    width: "308",
+    height: "101",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, React.createElement("g", null, React.createElement("rect", {
+    fill: "none",
+    id: "canvas_background",
+    height: "103",
+    width: "310",
+    y: "-1",
+    x: "-1"
+  }), React.createElement("g", {
+    display: "none",
+    overflow: "visible",
+    y: "0",
+    x: "0",
+    height: "100%",
+    width: "100%",
+    id: "canvasGrid"
+  }, React.createElement("rect", {
+    fill: "url(#gridpattern)",
+    "stroke-width": "0",
+    y: "0",
+    x: "0",
+    height: "100%",
+    width: "100%"
+  }))), React.createElement("g", null, React.createElement("title", null, "Layer 1"), React.createElement("text", {
+    "stroke-dasharray": "5,2,2,2",
+    xmlSpace: "preserve",
+    "text-anchor": "start",
+    "font-family": "'Courier New', Courier, monospace",
+    "font-size": "84",
+    id: "svg_1",
+    y: "73",
+    x: "3",
+    "stroke-width": "6",
+    stroke: "#000",
+    fill: "#00b3b4"
+  }, "Ernest")));
+};
+},{"react":"node_modules/react/index.js"}],"src/Panatda.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Panatda = function Panatda(props) {
+  return React.createElement("svg", {
+    width: "271",
+    height: "102",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, React.createElement("g", null, React.createElement("title", null, "background"), React.createElement("rect", {
+    fill: "none",
+    id: "canvas_background",
+    height: "104",
+    width: "273",
+    y: "-1",
+    x: "-1"
+  }), React.createElement("g", {
+    display: "none",
+    overflow: "visible",
+    y: "0",
+    x: "0",
+    height: "100%",
+    width: "100%",
+    id: "canvasGrid"
+  }, React.createElement("rect", {
+    fill: "url(#gridpattern)",
+    "stroke-width": "0",
+    y: "0",
+    x: "0",
+    height: "100%",
+    width: "100%"
+  }))), React.createElement("g", null, React.createElement("title", null, "Layer 1"), React.createElement("text", {
+    xmlSpace: "preserve",
+    "text-anchor": "start",
+    "font-family": "'Shadows Into Light', serif",
+    "font-size": "84",
+    id: "svg_1",
+    y: "78",
+    x: "2.5",
+    "stroke-width": "5",
+    stroke: "#000",
+    fill: "#00b3b4"
+  }, "Panatda")));
+};
+
+var _default = Panatda;
+exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
@@ -31529,6 +31635,10 @@ var _react = _interopRequireDefault(require("react"));
 var _reactGridGallery = _interopRequireDefault(require("react-grid-gallery"));
 
 var _MessageList = _interopRequireDefault(require("./MessageList"));
+
+var _Ernest = _interopRequireDefault(require("./Ernest"));
+
+var _Panatda = _interopRequireDefault(require("./Panatda"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32136,11 +32246,7 @@ var App = function App() {
       caption: e.title.split("")[0].toUpperCase() + e.title.slice(1).toLowerCase()
     };
   });
-  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Thank You Ernest and Panatda!!!!"), _react.default.createElement("hr", null), _react.default.createElement("img", {
-    id: "epicodus",
-    src: "//static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/57cf3de246c3c4d2933aa57c/1546532665785/?format=1500w",
-    alt: "Epicodus | A vocational school for aspiring programmers"
-  }), _react.default.createElement("hr", null), _react.default.createElement("h3", null, "You make a difference."), _react.default.createElement("div", null, _react.default.createElement("b", null, "Messages:"), " ", _react.default.createElement("br", null), _react.default.createElement(_MessageList.default, null), " ", _react.default.createElement("hr", null)), _react.default.createElement("h3", null, "Images"), _react.default.createElement(_reactGridGallery.default, {
+  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Thank You!!!!"), _react.default.createElement("h3", null, "You make a difference."), _react.default.createElement("hr", null), _react.default.createElement("hr", null), _react.default.createElement("div", null, _react.default.createElement(_MessageList.default, null), _react.default.createElement("hr", null), _react.default.createElement("hr", null)), _react.default.createElement("h1", null, "Epicodus Gallery (click em!)"), _react.default.createElement(_reactGridGallery.default, {
     images: finalImages,
     backdropClosesModal: true,
     enableKeyBoardInput: true
@@ -32149,7 +32255,7 @@ var App = function App() {
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-grid-gallery":"node_modules/react-grid-gallery/lib/Gallery.js","./MessageList":"src/MessageList.js"}],"src/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-grid-gallery":"node_modules/react-grid-gallery/lib/Gallery.js","./MessageList":"src/MessageList.js","./Ernest":"src/Ernest.js","./Panatda":"src/Panatda.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32188,7 +32294,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62142" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58311" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

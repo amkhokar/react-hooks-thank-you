@@ -8,12 +8,17 @@ const MessageList = () => {
         "Thanks for being the peoples that stand for us to succeed in the world. It shows how big of people your are to be able to put so much of yourselves into allowing us to fulfill our dreams."
     },
     {
+      name: "Skye",
+      message:
+        "Thank you both for being amazing supporters to us all. You absolutely did everything you could to help us and I am very grateful to have you both in my life!"
+    },
+    {
       name: "MARK",
       message: `Yow Thanks Ernest!`
     },
     {
       name: "MERIA",
-      message: `It's a bitter sweet moment that our classes are coming to an end. It has been very educational but a fun journey. I am going to miss you and thank you for all the help. You guys have been great teachers. That's my piece of message for the teachers`
+      message: `It's a bitter sweet moment that our classes are coming to an end. It has been very educational but a fun journey. I am going to miss you and thank you for all the help. You guys have been great teachers.`
     },
     {
       name: "JULIUS",

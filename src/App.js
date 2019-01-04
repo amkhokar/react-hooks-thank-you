@@ -1,6 +1,8 @@
 import React from "react";
 import Gallery from "react-grid-gallery";
 import MessageList from "./MessageList";
+import Ernest from "./Ernest";
+import Panatda from "./Panatda";
 // import useEndpoint from "./useEndpoint";
 const App = () => {
   // const flickrAPI =
@@ -670,20 +672,17 @@ const App = () => {
   }));
   return (
     <div>
-      <h1>Thank You Ernest and Panatda!!!!</h1>
-      <hr />
-      <img
-        id="epicodus"
-        src="//static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/57cf3de246c3c4d2933aa57c/1546532665785/?format=1500w"
-        alt="Epicodus | A vocational school for aspiring programmers"
-      />
-      <hr />
+      <h1>Thank You!!!!</h1>
       <h3>You make a difference.</h3>
+
+      <hr />
+      <hr />
       <div>
-        <b>Messages:</b> <br />
-        <MessageList /> <hr />
+        <MessageList />
+        <hr />
+        <hr />
       </div>
-      <h3>Images</h3>
+      <h1>Epicodus Gallery (click em!)</h1>
       <Gallery
         images={finalImages}
         backdropClosesModal={true}
