@@ -13,7 +13,7 @@ const MessageList = () => {
         "Thank you both for being amazing supporters to us all. You absolutely did everything you could to help us and I am very grateful to have you both in my life!"
     },
     {
-      name: "MARK",
+      name: "Mark",
       message: `Yow Thanks Ernest and Panatda!`
     },
     {
