@@ -1,8 +1,6 @@
 import React from "react";
 import Gallery from "react-grid-gallery";
 import MessageList from "./MessageList";
-import Ernest from "./Ernest";
-import Panatda from "./Panatda";
 // import useEndpoint from "./useEndpoint";
 const App = () => {
   // const flickrAPI =
@@ -672,9 +670,53 @@ const App = () => {
   }));
   return (
     <div>
+      <svg
+        id="ernest"
+        width="271"
+        height="102"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path fill="none" d="M-1-1h273v104H-1z" />
+        <g>
+          <text
+            strokeDasharray="5,2,2,2,2,2"
+            fontFamily="'Shadows Into Light', serif"
+            fontSize="84"
+            y="78"
+            x="2.5"
+            strokeWidth="10"
+            stroke="#00b3b4"
+            fill="#fff"
+            cursor="move"
+          >
+            Ernest
+          </text>
+        </g>
+      </svg>
+      <svg
+        id="panatda"
+        width="271"
+        height="102"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path fill="none" d="M-1-1h273v104H-1z" />
+        <g>
+          <text
+            strokeDasharray="2,2"
+            fontFamily="'Shadows Into Light', serif"
+            fontSize="84"
+            y="78"
+            x="2.5"
+            strokeWidth="12"
+            stroke="#fff"
+            fill="#00b3b4"
+          >
+            Panatda
+          </text>
+        </g>
+      </svg>
       <h1>Thank You!!!!</h1>
       <h3>You make a difference.</h3>
-
       <hr />
       <hr />
       <div>

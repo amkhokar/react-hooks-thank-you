@@ -14,7 +14,7 @@ const MessageList = () => {
     },
     {
       name: "MARK",
-      message: `Yow Thanks Ernest!`
+      message: `Yow Thanks Ernest and Panatda!`
     },
     {
       name: "MERIA",
@@ -22,7 +22,7 @@ const MessageList = () => {
     },
     {
       name: "JULIUS",
-      message: `Thank you ernest and panadta for being a great teacher! Hoping to work with you in the future!`
+      message: `Thank you Ernest and Panatda for being a great teacher! Hoping to work with you in the future!`
     },
     {
       name: "CATHY",
